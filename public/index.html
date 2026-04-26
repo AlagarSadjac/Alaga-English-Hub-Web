@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <title>ALAGA ENGLISH LEARNING HUB</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+
+<body>
+
+    <div id="login-section" class="card" style="max-width: 400px; margin: 50px auto;">
+        <h2>Student Login</h2>
+        <input type="email" id="email" placeholder="Email" class="btn" style="background: white; color: black; text-align: left; width: 80%;">
+        <input type="password" id="password" placeholder="Password" class="btn" style="background: white; color: black; text-align: left; width: 80%; margin-top: 10px; " onkeypress="if(event.key === 'Enter') performLogin()">
+        <br>
+        <button class="btn" onclick="performLogin()">Login</button>
+        <p style="margin-top: 15px; font-size: 0.9rem;">
+            புதிய மாணவரா? <a href="#" onclick="showSignUp()" style="color: #2575fc; font-weight: bold;">Sign Up</a>
+        </p>
+    </div>
+
+
+    <div id="signup-section" class="card" style="display: none; max-width: 400px; margin: 50px auto;">
+        <h2>Student Registration</h2>
+        <input type="text" id="reg-name" placeholder="Full Name" class="btn" style="background: white; color: black; text-align: left; width: 80%;">
+        <input type="email" id="reg-email" placeholder="Email" class="btn" style="background: white; color: black; text-align: left; width: 80%; margin-top: 10px;">
+        <input type="password" id="reg-pass" placeholder="Create Password" class="btn" style="background: white; color: black; text-align: left; width: 80%; margin-top: 10px;">
+        <br>
+        <button class="btn" onclick="performSignUp()">Register</button>
+        <p style="margin-top: 15px; font-size: 0.9rem;">
+            ஏற்கனவே கணக்கு உள்ளதா? <a href="#" onclick="showLogin()" style="color: #2575fc;">Login</a>
+        </p>
+    </div>
+
+
+    <div id="main-container" class="main-container" style="display: none;">
+        <header>
+            <h1>Alaga English Learning Hub</h1>
+            <p>Master English Tenses & Vocabulary easily</p>
+        </header>
+
+
+    
+        <div class="grid-container">
+            <div class="card">
+                <div class="icon">📖</div>
+                <h3>Tenses</h3>
+                <button class="btn" onclick="showTenses()">Explore Tenses</button>
+                <div id="tenses-info" style="display:none;"></div>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">✍️</div>
+                <h3>Vocabulary</h3>
+                <button class="btn" onclick="showVocab()">Learn Words</button>
+                <div id="vocab-info" style="display:none;"></div>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">🎯</div>
+                <h3>Practice Quiz</h3>
+                <p>உங்கள் அறிவைச் சோதித்துப் பார்க்க ஒரு சிறிய தேர்வு.</p>
+                <button class="btn" onclick="showQuiz()">Start Quiz</button>
+                <div id="quiz-info" style="display:none;"></div>
+            </div>
+
+</div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
