@@ -41,6 +41,7 @@ header p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+    width: 100%;
 }
 
 .card {
@@ -109,5 +110,23 @@ p {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 600px) {
+    .main-container {
+        padding: 15px; /* 40px-ல் இருந்து 15px ஆகக் குறைக்கவும் */
+        width: 100%;
+    }
+
+    .grid-container {
+        /* மொபைலில் கார்டுகள் ஒன்றை ஒன்று இடிக்காமல் ஒன்றின் கீழ் ஒன்றாக வர இது உதவும் */
+        grid-template-columns: 1fr; 
+    }
+
+    .card {
+        width: 100%; /* கார்டு மொபைல் திரையின் முழு அகலத்தையும் எடுத்துக்கொள்ளும் */
+        margin-bottom: 15px;
+    }
 }
 
