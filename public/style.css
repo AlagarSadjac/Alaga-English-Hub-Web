@@ -115,23 +115,28 @@ p {
 
 @media (max-width: 600px) {
     .main-container {
-        padding: 10px; /* ஓரங்களில் இடைவெளியைக் குறைக்கவும் */
+        padding: 15px;      /* இடது மற்றும் வலது பக்கம் சமமான இடைவெளி கொடுக்கும் */
         width: 100%;
-        overflow-x: hidden; /* திரை விட்டு வெளியே போவதைத் தடுக்கும் */
-        box-sizing: border-box; /* இது மிக முக்கியம்! */
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        width: 100%;
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* எல்லாவற்றையும் மையப்படுத்தும் */
         box-sizing: border-box;
     }
 
+    .grid-container {
+        display: flex;       /* கிரிடுக்கு பதில் பிளெக்ஸ் பயன்படுத்தினால் மொபைலில் எளிது */
+        flex-direction: column;
+        align-items: center; /* கார்டுகளைச் சரியாக நடுவில் வைக்கும் */
+        width: 100%;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
     .card {
-        width: 100% !important; /* கார்டு 100% அகலத்தை எடுக்கும் */
-        margin: 0 0 20px 0 !important; /* ஓரத்தில் மார்ஜின் தேவையில்லை, கீழே மட்டும் இருந்தால் போதும் */
-        box-sizing: border-box; /* பேடிங் சேர்த்தாலும் அகலம் மாறாமல் தடுக்கும் */
+        width: 100% !important; 
+        max-width: 350px;    /* மொபைலில் கார்டு ரொம்பப் பெருசாகி ஓரத்தை இடிக்காமல் தடுக்கும் */
+        margin: 0 auto;      /* தானாகவே நடுவில் அமரும் */
+        box-sizing: border-box;
     }
 }
