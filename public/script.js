@@ -64,7 +64,7 @@ function performLogin() {
     const userPass = document.getElementById('password').value;
 
 
-    fetch('http://alaga-english-hub-web-api.onrender.com/api/student/login', {  // ஸ்பிரிங் பூட் API-க்கு தகவலை அனுப்புதல்
+    fetch('https://alaga-english-hub-web-api.onrender.com/api/student/login', {  // ஸ்பிரிங் பூட் API-க்கு தகவலை அனுப்புதல்
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
