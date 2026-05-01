@@ -57,13 +57,14 @@ function showQuiz() {
 }
 
 
+//======================================================================================
 
 function performLogin() {
     const userEmail = document.getElementById('email').value;
     const userPass = document.getElementById('password').value;
 
 
-    fetch('https://localhost:8080/api/student/login', {  // ஸ்பிரிங் பூட் API-க்கு தகவலை அனுப்புதல்
+    fetch('http://alaga-english-hub-web.onrender.com/api/student/login', {  // ஸ்பிரிங் பூட் API-க்கு தகவலை அனுப்புதல்
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -132,7 +133,7 @@ function performSignUp() {     //  புதிய மாணவர் பதி�
         return;
     }
 
-    fetch('https://localhost:8080/api/student/register', {
+    fetch('http://alaga-english-hub-web.onrender.com/api/student/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: name, email: email, password: pass })
@@ -167,7 +168,7 @@ function performLogin() {
     const userEmail = document.getElementById('email').value;
     const userPass = document.getElementById('password').value;
 
-    fetch('https://localhost:8080/api/student/login', {
+    fetch('http://alaga-english-hub-web.onrender.com/api/student/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: userEmail, password: userPass })
