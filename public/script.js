@@ -167,7 +167,7 @@ function performLogin() {
     const userEmail = document.getElementById('email').value;
     const userPass = document.getElementById('password').value;
 
-    fetch('https://alaga-english-hub-web-api.onrender.com/api/student/login', {
+    fetch('https://alaga-english-hub-web-api.onrender.com/api/student', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: userEmail, password: userPass })
