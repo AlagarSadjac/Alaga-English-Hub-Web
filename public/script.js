@@ -163,42 +163,42 @@ function showLogin() {
 
 //-------------------------------------------
 // லாகின் செய்யும் பங்க்ஷன்
-// function performLogin() {
-//     const userEmail = document.getElementById('email').value;
-//     const userPass = document.getElementById('password').value;
+function performLogin() {
+    const userEmail = document.getElementById('email').value;
+    const userPass = document.getElementById('password').value;
 
-//     fetch('https://alaga-english-hub-web-api.onrender.com/api/student/login', {
-//         method: 'POST',
-//         headers: { 'Content-Type': 'application/json' },
-//         body: JSON.stringify({ email: userEmail, password: userPass })
-//     })
-//     .then(response => response.text())
-//     .then(data => {
-//         // இங்கே கவனியுங்கள்: பழைய alert வரி எதுவுமே இருக்கக்கூடாது!
+    fetch('https://alaga-english-hub-web-api.onrender.com/api/student/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: userEmail, password: userPass })
+    })
+    .then(response => response.text())
+    .then(data => {
+        // இங்கே கவனியுங்கள்: பழைய alert வரி எதுவுமே இருக்கக்கூடாது!
         
-//         if (data === "success") {
-//             //  டோஸ்ட் அறிவிப்பு (Toast)
-//             const toast = document.createElement("div");
-//             toast.innerText = "வெற்றிகரமாக லாகின் செய்யப்பட்டது! உள்ளே நுழைகிறது...";
-//             toast.style = "position: fixed; top: 20px; right: 20px; background: #28a745; color: white; padding: 15px 25px; border-radius: 10px; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.2); font-weight: bold;";
-//             document.body.appendChild(toast);
+        if (data === "success") {
+            //  டோஸ்ட் அறிவிப்பு (Toast)
+            const toast = document.createElement("div");
+            toast.innerText = "வெற்றிகரமாக லாகின் செய்யப்பட்டது! உள்ளே நுழைகிறது...";
+            toast.style = "position: fixed; top: 20px; right: 20px; background: #28a745; color: white; padding: 15px 25px; border-radius: 10px; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.2); font-weight: bold;";
+            document.body.appendChild(toast);
 
-//             // வினாடி கழித்து பக்கம் மாறுதல்
-//             setTimeout(() => {
-//                 toast.remove(); 
-//                 document.getElementById('login-section').style.display = 'none';
-//                 document.getElementById('main-container').style.display = 'block';
-//             }, 2000); 
-//         } 
-//         else if (data === "wrong_password") {
-//             alert("தவறான பாஸ்வேர்ட்!");
-//         }
-//         else {
-//             alert("பயனர் காணப்படவில்லை! தயவுசெய்து பதிவு செய்யவும்.");
-//         }
-//     })
-//     .catch(error => {
-//         console.error('Error:', error);
-//     });
-// }
+            // வினாடி கழித்து பக்கம் மாறுதல்
+            setTimeout(() => {
+                toast.remove(); 
+                document.getElementById('login-section').style.display = 'none';
+                document.getElementById('main-container').style.display = 'block';
+            }, 2000); 
+        } 
+        else if (data === "wrong_password") {
+            alert("தவறான பாஸ்வேர்ட்!");
+        }
+        else {
+            alert("பயனர் காணப்படவில்லை! தயவுசெய்து பதிவு செய்யவும்.");
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
 
