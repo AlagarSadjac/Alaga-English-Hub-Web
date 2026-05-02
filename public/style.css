@@ -16,15 +16,20 @@ body {
 .card {
     display: block;
     background: #ffffff;
-    width: 80% !important; 
+    
+    /* மொபைலில் 90% அகலம் எடுக்கும் */
+    width: 90%; 
+    
+    /* லேப்டாப்பில் எவ்வளவு அகலம் வேண்டும் என்பதை இங்கே மாற்றவும் */
+    /* உங்களுக்கு கார்டு இன்னும் பெரிதாக வேண்டும் என்றால் 800px அல்லது 1000px என மாற்றுங்கள் */
+    max-width: 800px; 
+    
     margin: auto;
-    max-width: 380px; 
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-
 .main-container {
     background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
     backdrop-filter: blur(10px);
