@@ -10,8 +10,7 @@ body {
     align-items: center;
     min-height: 100vh;
     color: #fff;
-    
-    
+        
     padding: 15%;
 }
 
@@ -60,9 +59,7 @@ header p {
     overflow: hidden;
     border: none;
 
-    width: 90%;
-    margin: 2px auto;
-    box-sizing: border-box;
+    
 }
 
 .card:hover {
