@@ -10,6 +10,9 @@ body {
     align-items: center;
     min-height: 100vh;
     color: #fff;
+    
+    
+    padding: 15%;
 }
 
 .main-container {
