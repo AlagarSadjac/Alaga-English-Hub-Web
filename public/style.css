@@ -16,6 +16,26 @@ body {
 }    
 
 
+.card {
+    background: #ffffff;
+    /* 90% அகலம் கொடுத்தால் ஓரங்களில் கண்டிப்பாக 5% கேப் வரும் */
+    width: 90% !important; 
+    /* லேப்டாப்பில் ரொம்பப் பெருசாகாமல் இருக்க இதைக் கொடுங்கள் */
+    max-width: 380px; 
+    
+    /* கார்டைச் சரியாக நடுவில் வைக்க இது அவசியம் */
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    
+    /* இது கார்டுக்கு வெளியே இருக்கும் எதையும் உள்ளே விடாது */
+    box-sizing: border-box; 
+}
+
+
+
 .main-container {
     background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
     backdrop-filter: blur(10px);
@@ -50,24 +70,6 @@ header p {
     width: 100%;
 }
 
-.card {
-    background: #ffffff;
-    /* 90% அகலம் கொடுத்தால் ஓரங்களில் கண்டிப்பாக 5% கேப் வரும் */
-    width: 90% !important; 
-    /* லேப்டாப்பில் ரொம்பப் பெருசாகாமல் இருக்க இதைக் கொடுங்கள் */
-    max-width: 380px; 
-    
-    /* கார்டைச் சரியாக நடுவில் வைக்க இது அவசியம் */
-    margin-left: auto;
-    margin-right: auto;
-    
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    
-    /* இது கார்டுக்கு வெளியே இருக்கும் எதையும் உள்ளே விடாது */
-    box-sizing: border-box; 
-}
 
 .card:hover {
     transform: translateY(-10px); /* மவுஸ் வைக்கும்போது உயரும் */
