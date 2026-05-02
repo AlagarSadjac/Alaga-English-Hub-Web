@@ -56,6 +56,9 @@ header p {
     position: relative;
     overflow: hidden;
     border: none;
+
+    width: 90%;
+    margin: 2px auto;
 }
 
 .card:hover {
