@@ -7,8 +7,8 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* அழகான நீல-ஊதா பின்னணி */
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 
