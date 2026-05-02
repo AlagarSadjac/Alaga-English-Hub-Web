@@ -18,10 +18,12 @@ body {
     padding: 40px;
     border-radius: 30px;
     box-shadow: 0 25px 45px rgba(0,0,0,0.2);
-    width: 90%;
+    width: 100%;
     max-width: 1100px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
+
+    
 }
 
 h1 {
@@ -135,3 +137,16 @@ p {
         box-sizing: border-box; /* பேடிங் சேர்த்தாலும் அகலம் மாறாமல் தடுக்கும் */
     }
 } 
+
+
+/* கார்டு முழு திரையை ஆக்கிரமிக்க இந்த ஸ்டைல் உதவும் */
+.full-width-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+/* மற்ற கார்டுகளை மறைக்க */
+.hide-card {
+    display: none !important;
+}
