@@ -2,25 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-  margin: 0;
-  padding: 20px; /* 👈 இதுதான் left/right gap create பண்ணும் */
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  font-family: 'Poppins', sans-serif;
-}
+    
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;    
+}   
 
 .card {
-  width: 100%;        /* 👈 full width allow பண்ணு */
-  max-width: 380px;   /* 👈 but limit it */
-  padding: 30px;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: block;
+    background: #ffffff;
+    width: 80% !important; 
+    margin: auto;
+    max-width: 380px; 
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-sizing: border-box; 
 }
-
 
 .main-container {
     background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
