@@ -5,7 +5,7 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* அழகான பின்னணி */
 
     /* உங்கள் புகைப்படத்தின் லிங்க் இங்கே கொடுக்கவும் */
-    background-image: url('your-photo-youtube.jpeg'); 
+    background-image: url('youtube.jpeg'); 
     
     /* புகைப்படம் திரை முழுவதும் தெரிய */
     background-size: cover;
