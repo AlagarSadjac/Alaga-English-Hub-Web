@@ -5,14 +5,14 @@ body {
     
     
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* அழகான நீல-ஊதா பின்னணி */
-    margin: auto;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 
-    width: 90%;
+    
 }    
 
 
@@ -59,6 +59,9 @@ header p {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* லேசான நிழல் */
     margin: 20px;        /* வெளியிலும் இடைவெளி விட */
     box-sizing: border-box;
+
+    width: 90%;
+    margin: auto;
 }
 
 
