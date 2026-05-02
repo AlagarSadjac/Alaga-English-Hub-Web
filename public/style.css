@@ -2,29 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* கார்டை இடது-வலது நடுவில் வைக்கும் */
-    align-items: center;     /* கார்டை மேல்-கீழ் நடுவில் வைக்கும் */
-    min-height: 100vh;
-    background: url('your-image-path.jpg') no-repeat center center/cover; /* உங்கள் பின்னணி புகைப்படம் */
+  margin: 0;
+  padding: 20px; /* 👈 இதுதான் left/right gap create பண்ணும் */
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Poppins', sans-serif;
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.8); /* கண்ணாடி போன்ற தோற்றம் (Glass effect) */
-    backdrop-filter: blur(10px);         /* பின்னாடி இருப்பதை மங்கலாக்க */
-    
-    width: 85% !important;   /* ஸ்கிரீனில் 85% மட்டும் அகலம் எடுக்கும், மீதி 15% கேப் கிடைக்கும் */
-    max-width: 360px;        /* பெரிய மொபைல்களில் ரொம்பப் பெருசாகாமல் இருக்க */
-    
-    padding: 40px 30px;
-    border-radius: 30px;     /* வளைவான ஓரங்கள் */
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    
-    box-sizing: border-box;  /* இது மிக முக்கியம்: பேடிங் சேர்த்தாலும் அகலம் மாறாது */
-    margin: auto;            /* எல்லா பக்கமும் சமமான இடைவெளி கொடுக்கும் */
+  width: 100%;        /* 👈 full width allow பண்ணு */
+  max-width: 380px;   /* 👈 but limit it */
+
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
+
 
 .main-container {
     background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
