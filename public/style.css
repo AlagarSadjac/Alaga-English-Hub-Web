@@ -56,7 +56,6 @@ header p {
     padding: 30px;       /* உள்ளே இருக்கும் எழுத்துக்களுக்கு இடைவெளி */
     border-radius: 20px; /* ஓரங்களை வளைக்க */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* லேசான நிழல் */
-    margin: 20px;        /* வெளியிலும் இடைவெளி விட */
     box-sizing: border-box;
 
     width: 90%;
