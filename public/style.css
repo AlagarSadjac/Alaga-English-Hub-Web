@@ -4,13 +4,12 @@
 body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* அழகான பின்னணி */
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     color: #fff;
-    
     width: 90%;
         
 }
