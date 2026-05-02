@@ -4,7 +4,7 @@
 body {
     
     /* உங்கள் புகைப்படத்தின் லிங்க் இங்கே கொடுக்கவும் */
-    background-image: url('youtube.jpeg'); 
+    background-image: url('mine.jpg'); 
     
     /* புகைப்படம் திரை முழுவதும் தெரிய */
     background-size: cover;
@@ -79,7 +79,7 @@ header p {
     height: 100%;
     
     /* பின்னணியில் உள்ள அதே போட்டோவை இங்கேயும் கொடுக்கிறோம் */
-    background-image: url('youtube.jpeg'); 
+    /* background-image: url('youtube.jpeg');  */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
