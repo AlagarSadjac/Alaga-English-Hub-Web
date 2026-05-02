@@ -1,29 +1,32 @@
 /* நவீன கூகுள் ஃபான்ட் */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-body {
-    
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;    
-}    
-
-.card {
-    display: block;
-    background: #ffffff;
-    width: 90% !important; 
-    max-width: 380px; 
-    margin: auto;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    box-sizing: border-box; 
+/* பாடி மற்றும் வெளிப்பகுதி */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
+.main-container {
+    display: flex;
+    justify-content: center; /* இடது-வலது நடுவில் கொண்டு வரும் */
+    align-items: center;     /* மேல்-கீழ் நடுவில் கொண்டு வரும் */
+    min-height: 100vh;      /* ஸ்கிரீன் முழு உயரத்தையும் எடுக்கும் */
+    background-color: #f0f2f5; /* பின்புற நிறம் */
+}
+
+/* கார்டு டிசைன் */
+.card {
+    background: #ffffff;
+    width: 90%;             /* மொபைலில் 90% அகலம் */
+    max-width: 400px;       /* பெரிய ஸ்கிரீனில் 400px-க்கு மேல் போகாது */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* பேடிங் கொடுத்தாலும் அகலம் மாறாது */
+}
 
 
 .main-container {
@@ -37,11 +40,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
     box-sizing: border-box;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 
 
     
