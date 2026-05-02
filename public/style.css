@@ -3,8 +3,9 @@
 
 body {
     
+    background-color: #2575fc;
     /* உங்கள் புகைப்படத்தின் லிங்க் இங்கே கொடுக்கவும் */
-    background-image: url('youtube.jpeg'); 
+    /* background-image: url('youtube.jpeg');  */
     
     /* புகைப்படம் திரை முழுவதும் தெரிய */
     background-size: cover;
