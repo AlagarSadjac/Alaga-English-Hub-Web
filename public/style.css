@@ -16,14 +16,10 @@ body {
 .card {
     display: block;
     background: #ffffff;
-    
-    /* மொபைலில் 90% அகலம் எடுக்கும் */
     width: 90%; 
-    
-    /* லேப்டாப்பில் எவ்வளவு அகலம் வேண்டும் என்பதை இங்கே மாற்றவும் */
-    /* உங்களுக்கு கார்டு இன்னும் பெரிதாக வேண்டும் என்றால் 800px அல்லது 1000px என மாற்றுங்கள் */
+    width: 300px;
+    display: flex;
     max-width: 800px; 
-    
     margin: auto;
     padding: 30px;
     border-radius: 20px;
