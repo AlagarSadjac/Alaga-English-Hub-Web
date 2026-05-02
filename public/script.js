@@ -129,7 +129,7 @@ function performLogin() {
                 toast.remove(); 
                 document.getElementById('login-section').style.display = 'none';
                 document.getElementById('main-container').style.display = 'block';
-            }, 500); 
+            }, 1000); 
         } 
         else if (data === "wrong_password") {
             alert("தவறான பாஸ்வேர்ட்!");
