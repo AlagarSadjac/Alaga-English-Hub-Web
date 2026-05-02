@@ -3,27 +3,16 @@
 
 body {
     
-     background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
-    /* உங்கள் புகைப்படத்தின் லிங்க் இங்கே கொடுக்கவும் */
-
     
-    /* புகைப்படம் திரை முழுவதும் தெரிய */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-
-    font-family: 'Poppins', sans-serif;
-    margin: auto;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* அழகான நீல-ஊதா பின்னணி */
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #fff;
-    width: 90%;
-        
-}
+    font-family: 'Poppins', sans-serif;
+}    
+
 
 .main-container {
     background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
@@ -60,21 +49,16 @@ header p {
 }
 
 .card {
-    
-     background: rgba(255, 255, 255, 0.6) !important; 
-    
-    /* பின்னால் இருக்கும் போட்டோவை லேசாக மங்கலாக்க (Blur) இது உதவும் */
-    backdrop-filter: blur(10px); 
-    
-    /* மற்ற ஸ்டைல்கள் அப்படியே இருக்கட்டும் */
-    border-radius: 20px;
-    padding: 30px;
-
-    box-shadow: 0.4px 15px rgba(0,0,0,0.1);
-    width: 350px;
-    
-
+    background: #ffffff; /* சுத்தமான வெள்ளை நிறம் */
+    width: 90%;          /* திரையின் 90% அகலம் (ஓரங்களில் கேப் வரும்) */
+    max-width: 400px;    /* லேப்டாப்பில் ரொம்ப பெருசாகாமல் இருக்க */
+    padding: 30px;       /* உள்ளே இருக்கும் எழுத்துக்களுக்கு இடைவெளி */
+    border-radius: 20px; /* ஓரங்களை வளைக்க */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* லேசான நிழல் */
+    margin: 20px;        /* வெளியிலும் இடைவெளி விட */
+    box-sizing: border-box;
 }
+
 
 .card:hover {
     transform: translateY(-10px); /* மவுஸ் வைக்கும்போது உயரும் */
