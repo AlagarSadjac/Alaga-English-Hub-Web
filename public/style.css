@@ -2,43 +2,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;    
-}   
-
+    background-color: #f0f2f5;
+}
 .card {
-    display: block;
     background: #ffffff;
-    width: 90%; 
-    width: 300px;
-    display: flex;
-    max-width: 800px; 
-    margin: auto;
+    flex: 1;                 /* இது எல்லா கார்டுகளையும் சமமான அகலத்தில் வைக்கும் */
+    min-width: 280px;        /* கார்டு ரொம்ப சுருங்காமல் இருக்க */
+    max-width: 350px;        /* கார்டு ரொம்ப பெருசாகாமல் இருக்க */
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}.main-container {
+    display: flex;
+    flex-direction: row;     /* லேப்டாப்பில் பக்கவாட்டில் வர */
+    justify-content: center;
+    align-items: stretch;    /* இதுதான் எல்லா கார்டுகளையும் ஒரே உயரமாக்கும் */
+    gap: 20px;               /* கார்டுகளுக்கு இடையில் கேப் */
+    width: 95%;
+    max-width: 1200px;
+    flex-wrap: wrap;         /* மொபைலில் வரும்போது ஒன்றன் கீழ் ஒன்றாக மாறும் */
 }
-.main-container {
-    background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 25px 45px rgba(0,0,0,0.2);
-    width: 100%;
-    max-width: 1100px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
-    box-sizing: border-box;
-    
-}
+
+
+
+
+
+
 
 h1 {
     font-weight: 600;
