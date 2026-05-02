@@ -5,11 +5,9 @@ body {
   margin: 0;
   padding: 20px; /* 👈 இதுதான் left/right gap create பண்ணும் */
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   font-family: 'Poppins', sans-serif;
 }
@@ -17,7 +15,6 @@ body {
 .card {
   width: 100%;        /* 👈 full width allow பண்ணு */
   max-width: 380px;   /* 👈 but limit it */
-
   padding: 30px;
   border-radius: 20px;
   background: #fff;
