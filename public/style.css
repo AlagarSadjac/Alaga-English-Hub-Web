@@ -2,35 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
+    
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
     margin: 0;
-    padding: 0;
+    padding: ;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
+    font-family: 'Poppins', sans-serif;    
+}   
 
 .card {
+    display: block;
     background: #ffffff;
-    /* !important போட்டுப் பாருங்கள், வேறு ஏதாவது இதைத் தடுக்கிறதா எனத் தெரியும் */
-    width: 85% !important; 
-    max-width: 350px;
-    padding: 25px;
+    width: 80% !important; 
+    margin: auto;
+    max-width: 380px; 
+    padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    
-    /* இந்த 3 வரிகள் மிக முக்கியம் */
     box-sizing: border-box; 
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* கார்டுக்குள் இருக்கும் Input பெட்டிகள் ஸ்கிரீனை விட்டு வெளியே போகாமல் இருக்க */
-input, button {
-    width: 100%;
-    box-sizing: border-box;
-}
 .main-container {
     background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
     backdrop-filter: blur(10px);
