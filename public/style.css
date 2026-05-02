@@ -4,7 +4,8 @@
 body {
     
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-    margin: auto;
+    margin: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +16,7 @@ body {
 .card {
     display: block;
     background: #ffffff;
-    width: 90% !important; 
+    width: 100% !important; 
     max-width: 380px; 
     margin: auto;
     padding: 30px;
