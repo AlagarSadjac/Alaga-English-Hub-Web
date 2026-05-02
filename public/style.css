@@ -3,35 +3,23 @@
 
 body {
     
-    
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* அழகான நீல-ஊதா பின்னணி */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
-
-    
+    font-family: 'Poppins', sans-serif;    
 }    
-
 
 .card {
     background: #ffffff;
-    /* 90% அகலம் கொடுத்தால் ஓரங்களில் கண்டிப்பாக 5% கேப் வரும் */
     width: 90% !important; 
-    /* லேப்டாப்பில் ரொம்பப் பெருசாகாமல் இருக்க இதைக் கொடுங்கள் */
     max-width: 380px; 
-    
-    /* கார்டைச் சரியாக நடுவில் வைக்க இது அவசியம் */
     margin: auto;
-    
-    
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    
-    /* இது கார்டுக்கு வெளியே இருக்கும் எதையும் உள்ளே விடாது */
     box-sizing: border-box; 
 }
 
@@ -40,13 +28,14 @@ body {
 .main-container {
     background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
     backdrop-filter: blur(10px);
-    padding: 40px;
+    padding: 20px;
     border-radius: 30px;
     box-shadow: 0 25px 45px rgba(0,0,0,0.2);
     width: 100%;
     max-width: 1100px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
+    box-sizing: border-box;
 
     
 }
