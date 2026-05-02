@@ -59,6 +59,7 @@ header p {
 
     width: 90%;
     margin: 2px auto;
+    box-sizing: border-box;
 }
 
 .card:hover {
