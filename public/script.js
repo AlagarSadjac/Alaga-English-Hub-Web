@@ -1,13 +1,5 @@
 
 
-document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => {
-        document.querySelector('.main-container').classList.add('full-width');
-        document.querySelector('.grid-container').classList.add('full-width');
-    });
-});
-
-
 function performLogin() {
     const userEmail = document.getElementById('email').value;
     const userPass = document.getElementById('password').value;
