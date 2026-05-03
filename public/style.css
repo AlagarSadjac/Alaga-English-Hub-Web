@@ -31,7 +31,7 @@ body {
     justify-content: center; /* கார்டுகளை எப்போதும் நடுவில் வைக்கும் */
     gap: 30px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 30px auto;
 }
 
