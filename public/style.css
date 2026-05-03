@@ -4,7 +4,7 @@
 body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
-    padding: 10;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -20,7 +20,7 @@ body {
     max-width: 400px;      /* லேப்டாப்பில் பெட்டி ரொம்ப பெருசாகாமல் இருக்க */
     padding: 30px 20px;    /* பெட்டிக்குள் இருக்கும் இடைவெளி */
     border-radius: 40px;   /* ஓரங்கள் அழகாக வளைந்து இருக்க */
-    box-sizing: border-box;
+    box-sizing:content-box;
     display: block;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* லேசான நிழல் (Shadow) இன்னும் அழகாக காட்டும் */
