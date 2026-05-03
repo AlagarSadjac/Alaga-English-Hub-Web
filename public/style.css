@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center; /* இடது-வலது பக்கம் நடுவில் வைக்க */
     align-items: center;     /* மேலே-கீழே பக்கம் நடுவில் வைக்க (முக்கியமானது) */
@@ -18,7 +18,7 @@ body {
     backdrop-filter: blur(10px);
     width: 50%;            /* மொபைல் திரையில் ஓரங்களில் கேப் வர */
     max-width: 400px;      /* லேப்டாப்பில் பெட்டி ரொம்ப பெருசாகாமல் இருக்க */
-    padding: 50px 30px;    /* பெட்டிக்குள் இருக்கும் இடைவெளி */
+    padding: 30px 20px;    /* பெட்டிக்குள் இருக்கும் இடைவெளி */
     border-radius: 40px;   /* ஓரங்கள் அழகாக வளைந்து இருக்க */
     box-sizing: border-box;
     display: block;
