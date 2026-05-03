@@ -1,7 +1,6 @@
 /* நவீன கூகுள் ஃபான்ட் */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-
 body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
@@ -18,7 +17,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     width: 90%;
-    max-width: 1200px;
+    max-width: 5000px;
     margin: 40px auto;    /* இதுதான் பெட்டியை நடுவில் நிறுத்தும் */
     padding: 40px 20px;
     border-radius: 30px;
