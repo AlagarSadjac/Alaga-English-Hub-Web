@@ -13,19 +13,22 @@ body {
     font-family: 'Poppins', sans-serif;    
 }   
 
+
 .card {
     background: #ffffff;
-    width: 90%; 
+    width: 100%;             /* 90% என்பதற்குப் பதில் 100% தரவும் */
+    max-width: 400px;        /* கார்டு ரொம்பப் பெருசாகாமல் இருக்க இது உதவும் */
     display: flex;
-    max-width: 800px;
-    flex:10 300px;
-    align-items: center; 
-    margin: 20px;
+    flex-direction: column;  /* இதைக் கண்டிப்பாகச் சேர்க்கவும், அப்போதுதான் பட்டன் கீழே வரும் */
+    align-items: center;
+    flex-shrink: 0;          /* கார்டு சுருங்காமல் இருக்க இதைச் சேர்க்கவும் */
+    margin: 20px auto;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     box-sizing: border-box;
 }
+
 .main-container {
     background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
     backdrop-filter: blur(10px);
