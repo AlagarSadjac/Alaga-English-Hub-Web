@@ -8,22 +8,24 @@ body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     display: flex;
-    justify-content: center; /* திரையில் பக்கத்தை நடுவில் வைக்கும் */
+    justify-content: center; /* இடது-வலது பக்கம் நடுவில் வைக்க */
+    align-items: center;     /* மேலே-கீழே பக்கம் நடுவில் வைக்க (முக்கியமானது) */
     overflow-x: hidden;
 }
 
 .main-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    width: 100%;
-    max-width: 1200px;
-    margin: 0;    /* இதுதான் பெட்டியை நடுவில் நிறுத்தும் */
-    padding: 40px 20px;
-    border-radius: 0;
+    width: 85%;            /* மொபைல் திரையில் ஓரங்களில் கேப் வர */
+    max-width: 400px;      /* லேப்டாப்பில் பெட்டி ரொம்ப பெருசாகாமல் இருக்க */
+    padding: 50px 30px;    /* பெட்டிக்குள் இருக்கும் இடைவெளி */
+    border-radius: 40px;   /* ஓரங்கள் அழகாக வளைந்து இருக்க */
     box-sizing: border-box;
-    display: block;       /* இதில் flex கொடுக்க வேண்டாம் */
+    display: block;
     text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* லேசான நிழல் (Shadow) இன்னும் அழகாக காட்டும் */
 }
+
 
 .grid-container {
     display: flex;         /* Grid-க்கு பதில் Flex பயன்படுத்துகிறோம் */
@@ -40,6 +42,9 @@ body {
 .card {
     background: #ffffff;
     flex: 0 1 calc(33.33% - 30px); /* லேப்டாப்பில் 3 கார்டுகள் வரிசையாக வரும் */
+    min-width: 300px;      /* கார்டின் குறைந்தபட்ச அகலம் */
+    min-height: 400px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
