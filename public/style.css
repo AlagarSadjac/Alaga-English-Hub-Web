@@ -25,13 +25,26 @@ body {
     text-align: center;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+/* 1. ஒரு கார்டு மட்டும் திறந்திருக்கும் போது அது நடுவில் வர இந்த கிளாஸ் உதவும் */
+.grid-container:has(.full-width-card) {
+    display: flex; 
+    justify-content: center;
     width: 100%;
-    margin-top: 30px;
-    
+}
+
+/* 2. திறக்கப்பட்ட கார்டு முழு அகலம் மற்றும் நடுவில் இருக்க */
+.full-width-card {
+    width: 100% !important;
+    max-width: 1000px; /* திரையில் மிக அழகாக தெரிய இந்த அளவு உதவும் */
+    margin: 0 auto !important; /* கார்டை சரியாக நடுவில் நிறுத்தும் */
+    display: flex !important;
+}
+
+/* 3. பாக்ஸ் ஓபன் ஆனதும் உள்ளே வரும் தகவல்கள் (Tenses/Quiz info) நடுவில் இருக்க */
+#tenses-info, #vocab-info, #quiz-info {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left; /* எழுத்துக்கள் மட்டும் இடது பக்கம் இருக்கட்டும், ஆனால் பாக்ஸ் நடுவில் இருக்கும் */
 }
 
 .card {
