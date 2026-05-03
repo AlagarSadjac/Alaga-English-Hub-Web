@@ -45,7 +45,8 @@ body {
 /* சாதாரண நிலையில் கார்டுகள் (3 வரிசையாக தெரிய) */
 .card {
     background: #ffffff;
-    width: 100%;          /* full occupy */
+    flex: 0 1 calc(33.33% - 30px); /* லேப்டாப்பில் 3 கார்டுகள் வரிசையாக வரும் */
+    min-width: 300px;      /* கார்டின் குறைந்தபட்ச அகலம் */
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -54,6 +55,30 @@ body {
     border-radius: 20px;
     box-sizing: border-box;
 }
+
+/* மொபைல் போனுக்காக */
+@media (max-width: 900px) {
+    .card {
+        flex: 0 1 100%;    /* மொபைலில் 100% அகலம் */
+    }
+}
+
+.card {
+    background: #ffffff;         /* full occupy */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    flex: 0 1 calc(33.33% - 30px); /* லேப்டாப்பில் 3 கார்டுகள் வரிசையாக வரும் */
+    min-width: 300px;      /* கார்டின் குறைந்தபட்ச அகலம் */
+    min-height: 400px;
+}
+
+
+
 
 /*==============================================================================================*/
 
