@@ -13,7 +13,7 @@ body {
 
 /* லாகின் மற்றும் மெயின் கண்டெய்னர் */
 #login-section, #signup-section, #main-container {
-    width: 90%;
+    width: 70%;
     margin: auto;
 }
 
