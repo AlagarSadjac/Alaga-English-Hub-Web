@@ -16,7 +16,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     width: 100%;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0;    /* இதுதான் பெட்டியை நடுவில் நிறுத்தும் */
     padding: 40px 20px;
     border-radius: 0;
@@ -31,8 +31,15 @@ body {
     justify-content: center; /* கார்டுகளை எப்போதும் நடுவில் வைக்கும் */
     gap: 30px;
     width: 100%;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 30px auto;
+}
+
+.main-container.full-width,
+.grid-container.full-width {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
 }
 
 
