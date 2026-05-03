@@ -1,62 +1,69 @@
 /* நவீன கூகுள் ஃபான்ட் */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+
+/* 1. பாடி அமைப்பு - முழு பக்கத்தையும் நடுவில் வைக்க */
 body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    display: flex;        /* இது மிக முக்கியம் */
-    justify-content: center;
-    align-items: flex-start; /* தலைப்பு மேலே தெரிய */
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* கிடைமட்டமாக நடுவில் வைக்க */
+    justify-content: flex-start;
     overflow-x: hidden;
 }
 
+/* 2. மெயின் கண்டெய்னர் - இதுதான் பக்கத்தின் மையப்பகுதி */
 .main-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    width: 90%;           
-    max-width: 1200px;    
-    margin: 40px auto;    /* இதுதான் பெட்டியை நடுவில் வைக்கும் */
+    width: 95%;
+    max-width: 1200px;    /* லேப்டாப் திரையில் அகலத்தை கட்டுப்படுத்த */
+    margin: 40px auto;    /* auto என்பது இடது/வலது பக்கம் சமமான இடைவெளியைத் தரும் */
     padding: 40px 20px;
     border-radius: 30px;
     box-shadow: 0 25px 45px rgba(0,0,0,0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
-    display: block;       /* லெப்ட் அலைன் ஆகாமல் இருக்க இது முக்கியம் */
-}
-
-
-.grid-container {
-    display: grid;
-    /* இது சரியாக 3 காலம்களை (Columns) உருவாக்கும் */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    justify-items: center; 
-}
-
-.card {
-    background: #ffffff;
-    width: 100%;             
-    max-width: 350px;        
-    min-height: 400px;       /* எல்லா பெட்டியும் ஒரே உயரத்தில் இருக்க */
-    display: flex;           
+    display: flex;        /* இதையும் flex ஆக மாற்றினால் உள்ளே உள்ளவை நடுவில் இருக்கும் */
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* உள்ளே இருக்கும் விஷயங்கள் நடுவில் இருக்க */
+}
+
+/* 3. கிரிட் கண்டெய்னர் - 3 கட்டங்களைச் சமமாக வைக்க */
+.grid-container {
+    display: grid;
+    /* லேப்டாப்பில் 3 சமமான கட்டங்களை மட்டும் உருவாக்க (1fr 1fr 1fr) */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
+    width: 100%;
+    margin-top: 30px;
+    justify-items: center; /* ஒவ்வொரு கட்டமும் தனக்குரிய இடத்தில் நடுவில் இருக்க */
+}
+
+/* 4. கார்டு டிசைன் - பெட்டி உருமாறாமல் இருக்க */
+.card {
+    background: #ffffff;
+    width: 100%;           /* கிரிட் கொடுத்த முழு இடத்தை எடுக்கும் */
+    max-width: 350px;      /* பெட்டி ரொம்ப பெரிதாகாமல் இருக்க */
+    min-height: 380px;     /* எல்லா பெட்டியும் ஒரே உயரத்தில் இருக்க */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     box-sizing: border-box;
     transition: transform 0.3s ease;
 }
-.card:hover {
-    transform: translateY(-10px);
-}
+
+
+
+/*-------------------------------------------------------------------------------------*/
 
 /* மொபைல் போனுக்காக - போனில் பார்த்தால் 3 பெட்டியும் வரிசையாக வர */
 @media (max-width: 900px) {
@@ -64,8 +71,6 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
-
 
 
 h1 {
