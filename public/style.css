@@ -2,45 +2,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 
+/* 1. பாடி - முழு பக்கத்தையும் நடுவில் வைக்க */
 body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    
-    
-    
+    display: flex;
+    justify-content: center; /* கிடைமட்டமாக நடுவில் வைக்க */
+    align-items: flex-start;
     overflow-x: hidden;
 }
 
+/* 2. மெயின் கண்டெய்னர் - லேப்டாப் திரையில் அழகாகத் தெரிய */
 .main-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    width: 95%;
-    max-width: 1200px;    /* லேப்டாப் திரையில் அகலத்தை கட்டுப்படுத்த */
-    margin: 40px auto;    /* auto என்பது இடது/வலது பக்கம் சமமான இடைவெளியைத் தரும் */
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;    /* இது மிக முக்கியம்: பெட்டியை நடுவில் நிறுத்தும் */
     padding: 40px 20px;
     border-radius: 30px;
-    display: block;        /* இதையும் flex ஆக மாற்றினால் உள்ளே உள்ளவை நடுவில் இருக்கும் */
-    text-align: center;    
+    box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    display: block;       /* இதில் flex கொடுக்க வேண்டாம், block போதும் */
+    text-align: center;
 }
 
+/* 3. கிரிட் கண்டெய்னர் - 3 பெட்டிகளையும் கட்டாயம் சமமாக வைக்க */
 .grid-container {
     display: grid;
-    /* லேப்டாப்பில் 3 சமமான கட்டங்களை மட்டும் உருவாக்க (1fr 1fr 1fr) */
-    grid-template-columns: repeat(3, 1fr); 
+    /* லேப்டாப்பில் 3 சமமான பகுதிகளை உருவாக்கும் - இதுதான் பெட்டி சுருங்குவதைத் தடுக்கும் */
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 25px;
     width: 100%;
     margin-top: 30px;
-    justify-items: center; /* ஒவ்வொரு கட்டமும் தனக்குரிய இடத்தில் நடுவில் இருக்க */
+    box-sizing: border-box;
 }
 
+/* 4. கார்டு டிசைன் */
 .card {
     background: #ffffff;
-    width: 100%;           /* கிரிட் கொடுத்த முழு இடத்தை எடுக்கும் */
-    max-width: 350px;      /* பெட்டி ரொம்ப பெரிதாகாமல் இருக்க */
-    min-height: 380px;     /* எல்லா பெட்டியும் ஒரே உயரத்தில் இருக்க */
+    width: 100%;             /* கிரிட் கொடுக்கும் முழு இடத்தை எடுக்கும் */
+    max-width: 350px;        /* கார்டு ரொம்பப் பெருசாகாமல் இருக்க */
+    min-height: 380px;       /* எல்லா பெட்டியும் ஒரே உயரத்தில் இருக்க */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,9 +56,8 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     box-sizing: border-box;
-    transition: transform 0.3s ease;
+    margin: 0 auto;          /* கார்டுகளை அந்தந்தப் பகுதிக்கு நடுவில் வைக்கும் */
 }
-
 
 
 /*-------------------------------------------------------------------------------------*/
