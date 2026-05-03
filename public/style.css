@@ -42,6 +42,7 @@ body {
     flex: 0 1 calc(33.33% - 30px); /* லேப்டாப்பில் 3 கார்டுகள் வரிசையாக வரும் */
     min-width: 300px;      /* கார்டின் குறைந்தபட்ச அகலம் */
     min-height: 400px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
