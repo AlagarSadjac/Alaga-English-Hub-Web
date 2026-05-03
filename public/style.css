@@ -17,7 +17,7 @@ body {
     backdrop-filter: blur(10px);
     width: 95%;
     max-width: 1400px;
-    margin: 30px auto;
+    margin: 40px auto;
     padding: 40px 20px;
     border-radius: 30px;
     box-shadow: 0 25px 45px rgba(0,0,0,0.2);
@@ -36,6 +36,8 @@ body {
     width: 100%;
     box-sizing: border-box;
     justify-items: center;
+
+    justify-content: center;
 }
 
 /* 4. கார்டு டிசைன் (Card) */
