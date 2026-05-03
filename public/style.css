@@ -21,7 +21,6 @@ body {
     flex:10 300px;
     align-items: center; 
     margin: 20px;
-    min-width: 280px;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
