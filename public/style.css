@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 
-/* 1. பாடி - முழு பக்கத்தையும் நடுவில் வைக்க */
 body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
@@ -10,54 +9,45 @@ body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     display: flex;
-    justify-content: center; /* கிடைமட்டமாக நடுவில் வைக்க */
+    justify-content: center; /* திரையில் பக்கத்தை நடுவில் வைக்கும் */
     align-items: flex-start;
     overflow-x: hidden;
 }
 
-/* 2. மெயின் கண்டெய்னர் - லேப்டாப் திரையில் அழகாகத் தெரிய */
 .main-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     width: 90%;
     max-width: 1200px;
-    margin: 50px auto;    /* இது மிக முக்கியம்: பெட்டியை நடுவில் நிறுத்தும் */
+    margin: 40px auto;    /* இதுதான் பெட்டியை நடுவில் நிறுத்தும் */
     padding: 40px 20px;
     border-radius: 30px;
-    box-shadow: 0 25px 45px rgba(0,0,0,0.2);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
-    display: block;       /* இதில் flex கொடுக்க வேண்டாம், block போதும் */
+    display: block;       /* இதில் flex கொடுக்க வேண்டாம் */
     text-align: center;
 }
 
-/* 3. கிரிட் கண்டெய்னர் - 3 பெட்டிகளையும் கட்டாயம் சமமாக வைக்க */
 .grid-container {
     display: grid;
-    /* லேப்டாப்பில் 3 சமமான பகுதிகளை உருவாக்கும் - இதுதான் பெட்டி சுருங்குவதைத் தடுக்கும் */
+    /* லேப்டாப்பில் 3 பெட்டிகளையும் கட்டாயம் சமமாக வைக்கும் */
     grid-template-columns: 1fr 1fr 1fr; 
-    gap: 25px;
+    gap: 30px;
     width: 100%;
     margin-top: 30px;
-    box-sizing: border-box;
+    justify-items: center; 
 }
 
-/* 4. கார்டு டிசைன் */
 .card {
     background: #ffffff;
-    width: 100%;             /* கிரிட் கொடுக்கும் முழு இடத்தை எடுக்கும் */
-    max-width: 350px;        /* கார்டு ரொம்பப் பெருசாகாமல் இருக்க */
-    min-height: 380px;       /* எல்லா பெட்டியும் ஒரே உயரத்தில் இருக்க */
+    width: 100%;
+    max-width: 350px;
+    min-height: 400px;    /* எல்லா பெட்டியும் ஒரே உயரத்தில் இருக்க */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     box-sizing: border-box;
-    margin: 0 auto;          /* கார்டுகளை அந்தந்தப் பகுதிக்கு நடுவில் வைக்கும் */
 }
-
 
 /*-------------------------------------------------------------------------------------*/
