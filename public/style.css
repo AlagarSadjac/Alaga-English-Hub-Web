@@ -23,7 +23,9 @@ body {
     box-sizing: border-box;
     display: block;       /* இதில் flex கொடுக்க வேண்டாம் */
     text-align: center;
-}.grid-container {
+}
+
+.grid-container {
     display: flex;         /* Grid-க்கு பதில் Flex பயன்படுத்துகிறோம் */
     flex-wrap: wrap;       /* இடம் பத்தவில்லை என்றால் அடுத்த வரிசைக்கு வரும் */
     justify-content: center; /* கார்டுகளை எப்போதும் நடுவில் வைக்கும் */
@@ -55,28 +57,7 @@ body {
 }
 
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-    width: 100%;
-    max-width: 1200px;
-    margin:30px auto;
-    
-}
-
-.card {
-    background: #ffffff;
-    width: 100%;          /* full occupy */
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    border-radius: 20px;
-    box-sizing: border-box;
-}
-/*-------------------------------------------------------------------------------------*/
+/*==============================================================================================*/
 
 
 /* மொபைல் போனுக்காக - போனில் பார்த்தால் 3 பெட்டியும் வரிசையாக வர */
