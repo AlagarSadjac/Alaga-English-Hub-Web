@@ -2,21 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 
-/* 1. பாடி அமைப்பு - முழு பக்கத்தையும் நடுவில் வைக்க */
 body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* கிடைமட்டமாக நடுவில் வைக்க */
-    justify-content: flex-start;
+    
+    
+    
     overflow-x: hidden;
 }
 
-/* 2. மெயின் கண்டெய்னர் - இதுதான் பக்கத்தின் மையப்பகுதி */
 .main-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -25,15 +22,10 @@ body {
     margin: 40px auto;    /* auto என்பது இடது/வலது பக்கம் சமமான இடைவெளியைத் தரும் */
     padding: 40px 20px;
     border-radius: 30px;
-    box-shadow: 0 25px 45px rgba(0,0,0,0.2);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-sizing: border-box;
-    display: flex;        /* இதையும் flex ஆக மாற்றினால் உள்ளே உள்ளவை நடுவில் இருக்கும் */
-    flex-direction: column;
-    align-items: center;
+    display: block;        /* இதையும் flex ஆக மாற்றினால் உள்ளே உள்ளவை நடுவில் இருக்கும் */
+    text-align: center;    
 }
 
-/* 3. கிரிட் கண்டெய்னர் - 3 கட்டங்களைச் சமமாக வைக்க */
 .grid-container {
     display: grid;
     /* லேப்டாப்பில் 3 சமமான கட்டங்களை மட்டும் உருவாக்க (1fr 1fr 1fr) */
@@ -44,7 +36,6 @@ body {
     justify-items: center; /* ஒவ்வொரு கட்டமும் தனக்குரிய இடத்தில் நடுவில் இருக்க */
 }
 
-/* 4. கார்டு டிசைன் - பெட்டி உருமாறாமல் இருக்க */
 .card {
     background: #ffffff;
     width: 100%;           /* கிரிட் கொடுத்த முழு இடத்தை எடுக்கும் */
@@ -160,6 +151,13 @@ p {
         box-sizing: border-box; /* பேடிங் சேர்த்தாலும் அகலம் மாறாமல் தடுக்கும் */
     }
 } 
+
+/* கார்டு முழு திரையை ஆக்கிரமிக்க இந்த ஸ்டைல் உதவும் */
+.full-width-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+}
 
 /* மற்ற கார்டுகளை மறைக்க */
 .hide-card {
