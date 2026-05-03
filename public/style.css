@@ -1,63 +1,59 @@
 /* நவீன கூகுள் ஃபான்ட் */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* 1. பின்னணி அமைப்பு */
 body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
+    display: flex;        /* இது மிக முக்கியம் */
+    justify-content: center;
+    align-items: flex-start; /* தலைப்பு மேலே தெரிய */
     overflow-x: hidden;
 }
 
-/* 2. மெயின் கண்டெய்னர் */
 .main-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    width: 90%;
-    max-width: 1400px;
-    margin: 40px auto;
+    width: 90%;           
+    max-width: 1200px;    
+    margin: 40px auto;    /* இதுதான் பெட்டியை நடுவில் வைக்கும் */
     padding: 40px 20px;
     border-radius: 30px;
     box-shadow: 0 25px 45px rgba(0,0,0,0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
-    text-align: center;
-    display: block;
+    display: block;       /* லெப்ட் அலைன் ஆகாமல் இருக்க இது முக்கியம் */
 }
 
-/* 3. கார்டுகளை அடுக்கும் முறை (Grid) */
+
 .grid-container {
     display: grid;
-    /* இதுதான் 3 பெட்டிகளையும் சமமாக லேப்டாப்பில் வைக்கும் */
+    /* இது சரியாக 3 காலம்களை (Columns) உருவாக்கும் */
     grid-template-columns: repeat(3, 1fr); 
-    gap: 25px;
+    gap: 30px;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    justify-items: center;
-
-
+    justify-items: center; 
 }
 
-/* 4. கார்டு டிசைன் (Card) */
 .card {
     background: #ffffff;
-    width: 100%;             /* கிரிட் கொடுத்த முழு இடத்தையும் எடுக்கும் */
-    max-width: 380px;        /* கார்டு ரொம்பப் பெருசாகாமல் இருக்க */
-    display: flex;           /* இது உங்கள் கோடில் விடுபட்டுள்ளது - முக்கியம்! */
-    flex-direction: column;  /* உள்ளடக்கத்தை வரிசையாக அடுக்க */
-    align-items: center;     /* நடுவில் வைக்க */
-    padding: 35px 25px;
+    width: 100%;             
+    max-width: 350px;        
+    min-height: 400px;       /* எல்லா பெட்டியும் ஒரே உயரத்தில் இருக்க */
+    display: flex;           
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* உள்ளே இருக்கும் விஷயங்கள் நடுவில் இருக்க */
+    padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     box-sizing: border-box;
     transition: transform 0.3s ease;
-    min-height: 350px; 
-    justify-content: center;      /* எல்லா பெட்டியும் ஒரே உயரத்தில் இருக்க */
 }
-
 .card:hover {
     transform: translateY(-10px);
 }
