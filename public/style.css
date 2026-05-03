@@ -7,20 +7,13 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow-x: hidden;
 }
 .card {
     background: #ffffff;
-    width: 100%;
+   
     max-width: 380px; /* கார்டு ரொம்பப் பெருசாகாமல் இருக்க */
-    
-    flex: 1 1 300px;
-
-
-    margin: 0 auto;  /* கார்டுகளை நடுவில் வைக்க */
-    display: flex;
+    padding: 35px 25px;
     flex-direction: column;
     align-items: center;
     padding: 35px 25px;
@@ -37,8 +30,8 @@ body {
 .main-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    width: 95%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1400px;
     margin: 20px auto;
     padding: 40px 20px;
     border-radius: 30px;
@@ -49,12 +42,10 @@ body {
 }
 .grid-container {
     display: grid;
-    /* இது கார்டுகளை திரைக்கு ஏற்ப தானாகவே 1, 2 அல்லது 3 வரிசையாக மாற்றும் */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 20px;
     width: 100%;
-    box-sizing: border-box;
+    justify-items: center;
 }
 
 
