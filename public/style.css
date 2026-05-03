@@ -1,8 +1,7 @@
 /* நவீன கூகுள் ஃபான்ட் */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-body {
-    
+body { 
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
     margin: 0;
     padding: 0;
@@ -13,11 +12,10 @@ body {
     font-family: 'Poppins', sans-serif;    
 }   
 
-
 .card {
     background: #ffffff;
-                /* 90% என்பதற்குப் பதில் 100% தரவும் */
-    max-width: 900px;        /* கார்டு ரொம்பப் பெருசாகாமல் இருக்க இது உதவும் */
+    width: 100%;            /* 90% என்பதற்குப் பதில் 100% தரவும் */
+    max-width: 400px;        /* கார்டு ரொம்பப் பெருசாகாமல் இருக்க இது உதவும் */
     display: flex;
     flex-direction: column;  /* இதைக் கண்டிப்பாகச் சேர்க்கவும், அப்போதுதான் பட்டன் கீழே வரும் */
     align-items: center;
@@ -26,9 +24,7 @@ body {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    box-sizing: border-box;
-    flex: 0 0 300px;
-    width: 300px;
+    box-sizing: border-box; 
 
 }
 
@@ -47,11 +43,18 @@ body {
 }
 
 .grid-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    
     
 }
 
