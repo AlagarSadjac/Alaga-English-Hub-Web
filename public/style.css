@@ -15,6 +15,10 @@ body {
     background: #ffffff;
     width: 100%;
     max-width: 380px; /* கார்டு ரொம்பப் பெருசாகாமல் இருக்க */
+    
+    flex: 1 1 300px;
+
+
     margin: 0 auto;  /* கார்டுகளை நடுவில் வைக்க */
     display: flex;
     flex-direction: column;
