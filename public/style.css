@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    min-height: 10vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center; /* இடது-வலது பக்கம் நடுவில் வைக்க */
     align-items: center;     /* மேலே-கீழே பக்கம் நடுவில் வைக்க (முக்கியமானது) */
