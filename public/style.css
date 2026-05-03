@@ -15,7 +15,7 @@ body {
 .main-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    width: 95%;
+    width: 90%;
     max-width: 1400px;
     margin: 40px auto;
     padding: 40px 20px;
@@ -24,6 +24,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
     text-align: center;
+    display: block;
 }
 
 /* 3. கார்டுகளை அடுக்கும் முறை (Grid) */
@@ -37,7 +38,7 @@ body {
     box-sizing: border-box;
     justify-items: center;
 
-    justify-content: center;
+
 }
 
 /* 4. கார்டு டிசைன் (Card) */
@@ -53,7 +54,8 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     box-sizing: border-box;
     transition: transform 0.3s ease;
-    min-height: 350px;       /* எல்லா பெட்டியும் ஒரே உயரத்தில் இருக்க */
+    min-height: 350px; 
+    justify-content: center;      /* எல்லா பெட்டியும் ஒரே உயரத்தில் இருக்க */
 }
 
 .card:hover {
