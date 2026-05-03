@@ -27,10 +27,9 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     box-sizing: border-box;
-
     flex: 0 0 300px;
     width: 300px;
-    min-width: 300px;
+
 }
 
 .main-container {
