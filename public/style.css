@@ -72,7 +72,6 @@ body {
     }
 }
 
-
 h1 {
     font-weight: 600;
     font-size: 2.5rem;
@@ -85,7 +84,6 @@ header p {
     opacity: 0.9;
     margin-bottom: 40px;
 }
-
 
 
 .icon {
@@ -162,14 +160,6 @@ p {
         box-sizing: border-box; /* பேடிங் சேர்த்தாலும் அகலம் மாறாமல் தடுக்கும் */
     }
 } 
-
-
-/* கார்டு முழு திரையை ஆக்கிரமிக்க இந்த ஸ்டைல் உதவும் */
-.full-width-card {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-}
 
 /* மற்ற கார்டுகளை மறைக்க */
 .hide-card {
