@@ -27,7 +27,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minimax(300px,1fr));
     gap: 30px;
     width: 100%;
     margin-top: 30px;
