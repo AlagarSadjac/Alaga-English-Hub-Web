@@ -17,10 +17,11 @@ body {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     width: 50%;            /* மொபைல் திரையில் ஓரங்களில் கேப் வர */
-    max-width: 400px;      /* லேப்டாப்பில் பெட்டி ரொம்ப பெருசாகாமல் இருக்க */
+    max-width: 350px;      /* லேப்டாப்பில் பெட்டி ரொம்ப பெருசாகாமல் இருக்க */
     padding: 30px 20px;    /* பெட்டிக்குள் இருக்கும் இடைவெளி */
     border-radius: 40px;   /* ஓரங்கள் அழகாக வளைந்து இருக்க */
-    box-sizing:content-box;
+    box-sizing:border-box;
+    margin: auto;
     display: block;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* லேசான நிழல் (Shadow) இன்னும் அழகாக காட்டும் */
