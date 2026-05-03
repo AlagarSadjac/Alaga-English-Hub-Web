@@ -15,9 +15,9 @@ body {
 .main-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    width: 100%;
-    max-width: 1200px;
-    margin: 0;    /* இதுதான் பெட்டியை நடுவில் நிறுத்தும் */
+    width: 90%;
+    max-width: 500px;
+    margin: 40px, 20px;    /* இதுதான் பெட்டியை நடுவில் நிறுத்தும் */
     padding: 40px 20px;
     border-radius: 0;
     box-sizing: border-box;
