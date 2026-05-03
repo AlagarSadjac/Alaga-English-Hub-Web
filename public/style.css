@@ -1,58 +1,57 @@
 /* நவீன கூகுள் ஃபான்ட் */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-body { 
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;    
-}   
-
+}
 .card {
     background: #ffffff;
-    width: 100%;            /* 90% என்பதற்குப் பதில் 100% தரவும் */
-    max-width: 400px;        /* கார்டு ரொம்பப் பெருசாகாமல் இருக்க இது உதவும் */
+    width: 100%;
+    max-width: 380px; /* கார்டு ரொம்பப் பெருசாகாமல் இருக்க */
+    margin: 0 auto;  /* கார்டுகளை நடுவில் வைக்க */
     display: flex;
-    flex-direction: column;  /* இதைக் கண்டிப்பாகச் சேர்க்கவும், அப்போதுதான் பட்டன் கீழே வரும் */
+    flex-direction: column;
     align-items: center;
-    flex-shrink: 0;          /* கார்டு சுருங்காமல் இருக்க இதைச் சேர்க்கவும் */
-    margin: 20px auto;
-    padding: 30px;
+    padding: 35px 25px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* மவுஸ் வைக்கும்போது அசைய */
+}
 
+.card:hover {
+    transform: translateY(-10px); /* மவுஸ் வைக்கும்போது லேசாக மேலே தூக்கும் */
 }
 
 .main-container {
-    background: rgba(255, 255, 255, 0.1); /* கண்ணாடி போன்ற தோற்றம் */
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 20px;
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px 20px;
     border-radius: 30px;
     box-shadow: 0 25px 45px rgba(0,0,0,0.2);
-    width: 100%;
-    max-width: 1100px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
     box-sizing: border-box;
-    
+    text-align: center;
 }
-
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, min-max(300px, 1fr));
-    gap: 25px;
+    /* இது கார்டுகளை திரைக்கு ஏற்ப தானாகவே 1, 2 அல்லது 3 வரிசையாக மாற்றும் */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     padding: 20px;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    
+    box-sizing: border-box;
 }
-
 
 
 
@@ -72,11 +71,6 @@ header p {
 }
 
 
-
-.card:hover {
-    transform: translateY(-10px); /* மவுஸ் வைக்கும்போது உயரும் */
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
 
 .icon {
     font-size: 45px;
