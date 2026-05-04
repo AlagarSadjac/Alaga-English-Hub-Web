@@ -83,19 +83,30 @@ header p {
     width: 100%;
 }
 /* 6. பட்டன் மற்றும் இன்புட் */
-.btn {
-    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+/* லேப்டாப்பில் பட்டன் ஓரத்தில் இருக்கும் */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 18px;
+    font-size: 14px;
+    background: #ff4b2b !important;
     color: white;
-    border: none;
-    padding: 14px 30px;
     border-radius: 50px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 15px;
-    width: 100%;
-    max-width: 200px;
+    z-index: 1000;
 }
 
+/* மொபைலில் மட்டும் பட்டனை சென்டருக்கு கொண்டு வர */
+@media (max-width: 768px) {
+    .logout-btn {
+        position: relative; /* இதுதான் எழுத்தை மறைக்காமல் இருக்க செய்யும் */
+        top: 0;
+        right: 0;
+        margin: 10px auto 20px; /* மேலேயும் கீழேயும் கேப் விடும் */
+        display: block;
+        width: fit-content;
+    }
+}
 input {
     width: 90% !important;
     padding: 15px 25px;      /* உள்ளே இருக்கும் இடைவெளியை அதிகரித்துள்ளேன் */
