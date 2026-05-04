@@ -82,7 +82,22 @@ header p {
     text-align: center;
     width: 100%;
 }
+
 /* 6. பட்டன் மற்றும் இன்புட் */
+.btn {
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 200px;
+}
+
+
 /* லேப்டாப்பில் பட்டன் ஓரத்தில் இருக்கும் */
 .logout-btn {
     position: absolute;
