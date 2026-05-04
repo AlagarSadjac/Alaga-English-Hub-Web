@@ -20,7 +20,7 @@ body {
 /* 2. லாகின் மற்றும் சைன்அப் பெட்டிகள் (Center Alignment) */
 #login-section, #signup-section {
     background: white;
-    width: 90%;
+    width: 70%;
     max-width: 380px;
     padding: 40px 25px;
     border-radius: 40px; /* உங்கள் புகைப்படத்தில் உள்ள அழகான வளைவு */
@@ -31,7 +31,7 @@ body {
 /* 3. மெயின் கண்டெய்னர் (லாகின் செய்த பிறகு) */
 .main-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100px;
     padding: 20px;
     display: none; /* JS மூலம் திறக்கப்படும் */
     margin: auto;
