@@ -132,23 +132,6 @@ input {
         gap: 20px;
     }
 
-    
-}
-
-.icon { font-size: 55px; margin-bottom: 15px; }
-
-#tenses-info, #vocab-info, #quiz-info {
-    width: 100%;
-    text-align: left;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-
-/* மொபைலில் பட்டன் எழுத்தை மறைக்காமல் இருக்க */
-@media (max-width: 768px) {
     .logout-btn {
         position: relative !important; /* ஓரத்திலிருந்து சாதாரண இடத்திற்கு மாற்றும் */
         top: 10px !important;
@@ -163,4 +146,18 @@ input {
         flex-direction: column-reverse; /* பட்டனை தலைப்புக்கு மேலே கொண்டு வரும் */
         align-items: center;
     }
+
+    
 }
+
+.icon { font-size: 55px; margin-bottom: 15px; }
+
+#tenses-info, #vocab-info, #quiz-info {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
