@@ -98,18 +98,6 @@ header p {
 }
 
 
-/* லேப்டாப்பில் பட்டன் ஓரத்தில் இருக்கும் */
-.logout-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 8px 18px;
-    font-size: 14px;
-    background: #ff4b2b !important;
-    color: white;
-    border-radius: 50px;
-    z-index: 1000;
-}
 
 input {
     width: 90% !important;
