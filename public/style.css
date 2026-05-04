@@ -24,7 +24,7 @@ body {
     width: 100%; /* மொபைலில் முழு அகலம் */
     max-width: 380px; /* லேப்டாப்பில் அகலத்தைக் கட்டுப்படுத்தும் */
     padding: 40px 25px;
-    border-radius: 40px;
+    border-radius: 20px;
     text-align: center;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     margin: auto;
