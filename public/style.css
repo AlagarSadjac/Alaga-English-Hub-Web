@@ -96,17 +96,6 @@ header p {
     z-index: 1000;
 }
 
-/* மொபைலில் மட்டும் பட்டனை சென்டருக்கு கொண்டு வர */
-@media (max-width: 768px) {
-    .logout-btn {
-        position: relative; /* இதுதான் எழுத்தை மறைக்காமல் இருக்க செய்யும் */
-        top: 0;
-        right: 0;
-        margin: 10px auto 20px; /* மேலேயும் கீழேயும் கேப் விடும் */
-        display: block;
-        width: fit-content;
-    }
-}
 input {
     width: 90% !important;
     padding: 15px 25px;      /* உள்ளே இருக்கும் இடைவெளியை அதிகரித்துள்ளேன் */
@@ -138,6 +127,15 @@ input {
 
     .grid-container {
         gap: 20px;
+    }
+
+    .logout-btn {
+        position: relative; /* இதுதான் எழுத்தை மறைக்காமல் இருக்க செய்யும் */
+        top: 0;
+        right: 0;
+        margin: 10px auto 20px; /* மேலேயும் கீழேயும் கேப் விடும் */
+        display: block;
+        width: fit-content;
     }
 }
 
