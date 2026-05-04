@@ -84,7 +84,142 @@ header {
     padding: 15px;
     box-sizing: border-box; /* இதுதான் மிக முக்கியம் - ஓரம் சரியாக இருக்க */
     background: #f9f9f9;
-    border-radius: 15px;
+    border-radius: 15px;/* நவீன கூகுள் ஃபான்ட் */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; /* திரையின் முழு உயரத்தை எடுக்க */
+    display: flex;
+    justify-content: center; /* இடது - வலது நடுவில் வைக்க */
+    align-items: center;     /* மேலே - கீழே நடுவில் வைக்க */
+}
+
+.main-container {
+    width: 100%;
+    max-width: 100%; /* இதை 100% வைத்தால் தான் கார்டு விரியும் */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none; /* JS மூலம் இது காட்டப்படும் */
+    text-align: center;
+}
+
+
+/* 1. லாகின் மற்றும் ரிஜிஸ்டர் கார்டுகள் */
+#login-section, #signup-section {
+    background: white;
+    
+    /* அகலம் மற்றும் உயரம் */
+    width: 85%;            /* மொபைல் திரையில் ஓரங்களில் கேப் வர */
+    max-width: 350px;      /* லேப்டாப்பில் ரொம்பப் பெரிதாகாமல் இருக்க */
+    padding: 45px 25px;    /* பெட்டிக்கு உள்ளே இருக்கும் இடைவெளி */
+    
+    /* அழகுபடுத்தும் விஷயங்கள் */
+    border-radius: 40px;   /* அந்தப் படத்தில் உள்ள அழகான வளைவு */
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* லேசான நிழல் */
+    
+    /* கூடுதல் கேப் தேவைப்பட்டால் */
+    margin: 20px auto;
+}
+
+/* 2. மெயின் கண்டெய்னர் (லாகின் செய்த பிறகு வரும் பக்கம்) */
+
+h1 { color: white; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+header p { color: white; opacity: 0.9; margin-bottom: 30px; }
+
+/* 3. கார்டுகள் இருக்கும் கிரிட் அமைப்பு */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 100%; /* சாதாரண நிலையில் மட்டும் அகலத்தைக் கட்டுப்படுத்தும் */
+    margin: 0 auto;
+}
+
+/* 4. சாதாரண கார்டு ஸ்டைல் */
+.card {
+    background: #ffffff;
+    flex: 0 1 calc(33.33% - 40px); /* லேப்டாப்பில் 3 கார்டுகள் வரிசையாக வர */
+    min-width: 300px;
+    min-height: 380px;
+    padding: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* 5. மிக முக்கியம்: ஒரு கார்டு மட்டும் திறந்திருக்கும் போது (Full Screen) */
+/* இதுதான் உங்கள் பிரச்சனையைச் சரி செய்யும் பகுதி */
+/* ஒரு பாக்ஸை கிளிக் செய்து திறந்திருக்கும் போது (Full Screen) */
+.grid-container .card.full-width-card {
+    flex: 0 0 100% !important;   /* அகலத்தை 100% ஆக்கும் */
+    width: 98% !important;        /* பக்கவாட்டில் மிகச்சிறிய இடைவெளி மட்டும் இருக்க */
+    max-width: 100% !important;   /* எந்தக் கட்டுப்பாடும் இல்லாமல் முழுமையாக விரிய */
+    min-height: 90vh !important;  /* உயரத்தை திரை முழுவதும் கொண்டு வர */
+    margin: 10px auto !important; /* கச்சிதமாக நடுவில் அமர */
+    padding: 40px !important;     /* உள்ளே இருக்கும் தகவல்களுக்கு இடைவெளி */
+    border-radius: 20px !important;
+    display: flex !important;
+}
+
+/* மற்ற கார்டுகளை மறைக்க */
+.hide-card {
+    display: none !important;
+}
+
+/* 6. இன்புட் மற்றும் பட்டன் ஸ்டைல்கள் */
+input.btn {
+    border: 1px solid #ddd !important;
+    border-radius: 50px !important;
+    padding: 12px 20px !important;
+    margin-bottom: 10px;
+    outline: none;
+    width: 85% !important;
+    background: white;
+}
+
+.btn {
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.icon { font-size: 50px; margin-bottom: 15px; }
+h3 { color: #4a148c; margin-bottom: 10px; }
+
+/* 7. மொபைல் போனுக்காக */
+@media (max-width: 900px) {
+    .card {
+        flex: 0 1 100%;
+        margin-bottom: 20px;
+    }
+    h1 { font-size: 1.8rem; }
+}
+
+/* தகவல் வெளிப்படும் இடத்திற்கான ஸ்டைல் */
+#tenses-info, #vocab-info, #quiz-info {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
     border-top: 4px solid #2575fc;
     font-size: 0.95rem;
 }
