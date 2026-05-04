@@ -132,14 +132,7 @@ input {
         gap: 20px;
     }
 
-    .logout-btn {
-        position: relative; /* இதுதான் எழுத்தை மறைக்காமல் இருக்க செய்யும் */
-        top: 0;
-        left: 0;
-        margin: 10px auto 20px; /* மேலேயும் கீழேயும் கேப் விடும் */
-        display: block;
-        width: fit-content;
-    }
+    
 }
 
 .icon { font-size: 55px; margin-bottom: 15px; }
@@ -151,4 +144,23 @@ input {
     background: #f8f9fa;
     border-radius: 20px;
     margin-top: 20px;
+}
+
+
+/* மொபைலில் பட்டன் எழுத்தை மறைக்காமல் இருக்க */
+@media (max-width: 768px) {
+    .logout-btn {
+        position: relative !important; /* ஓரத்திலிருந்து சாதாரண இடத்திற்கு மாற்றும் */
+        top: 10px !important;
+        right: auto !important;
+        margin: 0 auto 20px auto !important; /* நடுவில் வைக்க */
+        display: block !important;
+        width: fit-content !important;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse; /* பட்டனை தலைப்புக்கு மேலே கொண்டு வரும் */
+        align-items: center;
+    }
 }
