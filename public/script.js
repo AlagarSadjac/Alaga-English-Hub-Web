@@ -1,4 +1,12 @@
-
+function logout() {
+    // மெயின் கண்டெய்னரை மறைத்து லாகின் செக்ஷனை காட்டவும்
+    document.getElementById('main-container').style.display = 'none';
+    document.getElementById('login-section').style.display = 'block';
+    
+    // இன்புட் பீல்டுகளை காலி செய்ய (தேவையென்றால்)
+    document.getElementById('email').value = '';
+    document.getElementById('password').value = '';
+}
 
 function performLogin() {
     const userEmail = document.getElementById('email').value;
