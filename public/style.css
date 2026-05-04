@@ -13,7 +13,7 @@ body {
 
 /* லாகின் மற்றும் மெயின் கண்டெய்னர் */
 #login-section, #signup-section, #main-container {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -88,4 +88,27 @@ header {
     text-align: center;
     color: white;
     margin-bottom: 30px;
+}
+
+/* கார்டுக்குள் வரும் தகவல்களை (Tenses info) சரிசெய்ய */
+#tenses-info, #vocab-info, #quiz-info {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left; /* எழுத்துக்கள் இடதுபுறம் இருக்கட்டும் */
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fdfdfd;
+    border-radius: 15px;
+    border-top: 3px solid #2575fc; /* மேலே ஒரு சிறிய கோடு அழகுக்காக */
+}
+
+/* உள்ளே இருக்கும் ஒவ்வொரு வாக்கியத்திற்கும் இடையே இடைவெளி விட */
+#tenses-info p, #vocab-info p {
+    margin-bottom: 15px;
+    line-height: 1.6; /* வரிகளுக்கு இடையே இடைவெளி */
+}
+
+/* தடிமனான எழுத்துக்களுக்கு (Bold text) */
+strong {
+    color: #1a2a6c;
 }
